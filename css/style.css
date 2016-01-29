@@ -18,25 +18,109 @@ body {
   width: 90%;
   margin: 0 auto 0 auto; }
 
-#mainnav {
+#menu {
   padding-top: 40px;
   font-size: 20px;
   vertical-align: bottom;
   text-rendering: optimizeLegibility; }
-  #mainnav ul li {
+  #menu ul li {
     display: inline-block;
     margin: 30px;
-    padding-bottom: 3px; }
-    #mainnav ul li a {
+    padding-bottom: 3px;
+    list-style: none; }
+    #menu ul li a {
       text-decoration: none;
       color: initial; }
-  #mainnav ul .active {
+  #menu ul .active {
     border-bottom: 1px solid; }
-  #mainnav ul #hire {
+  #menu ul #hire {
     border: 1px solid;
     padding: 25px;
     margin: 0; }
 
 #hero {
-  height: 500px;
-  background-color: red; }
+  height: 200px;
+  text-align: center;
+  padding-top: 200px; }
+  #hero p {
+    margin-left: auto;
+    margin-right: auto; }
+  #hero .big {
+    font-size: 40px; }
+  #hero .small {
+    font-size: 22px;
+    color: #6b6b6b; }
+
+/* Navbar-Colapse */
+.navbar-checkbox {
+  display: none; }
+
+.navbar-handle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 45px;
+  padding: 0.5em 0;
+  height: 0;
+  width: 1.66666667em;
+  border-top: 0.13333333em solid; }
+  .navbar-handle:before, .navbar-handle:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: " ";
+    border-top: 0.13333333em solid; }
+  .navbar-handle:before {
+    top: 0.37777778em; }
+  .navbar-handle:after {
+    top: 0.88888889em; }
+
+.navbar-handle {
+  position: absolute;
+  font-size: 1.2em;
+  top: 0.7em;
+  right: 12px;
+  z-index: 10; }
+
+@media (max-width: 800px) {
+  #menu ul {
+    max-height: 0;
+    overflow: hidden; }
+  #menu li {
+    visibility: hidden;
+    display: block;
+    border: none; }
+  #menu ul {
+    margin-top: 0.5em; }
+  #menu .navbar-handle {
+    display: block; }
+
+  #navbar-checkbox:checked + .menu ul {
+    max-height: 300px; }
+  #navbar-checkbox:checked + .menu li {
+    visibility: visible; }
+  #navbar-checkbox:checked + .menu .navbar-handle {
+    border-color: #aaa; }
+    #navbar-checkbox:checked + .menu .navbar-handle:after, #navbar-checkbox:checked + .menu .navbar-handle:before {
+      border-color: #aaa; } }
+@media (max-width: 800px) {
+  #menu > ul {
+    max-height: 0;
+    overflow: show;
+    margin: 0 3.5em 0 1em; }
+  #menu li {
+    visibility: hidden;
+    display: block !important;
+    border: none;
+    text-align: right; }
+  #menu .navbar-handle {
+    display: block; }
+
+  #navbar-checkbox:checked + #menu ul {
+    max-height: 100%; }
+    #navbar-checkbox:checked + #menu ul li {
+      visibility: visible; }
+  #navbar-checkbox:checked + #menu .navbar-handle {
+    border-color: #aaa; }
+    #navbar-checkbox:checked + #menu .navbar-handle:after, #navbar-checkbox:checked + #menu .navbar-handle:before {
+      border-color: #aaa; } }

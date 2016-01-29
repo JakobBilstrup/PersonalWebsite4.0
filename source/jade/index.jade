@@ -9,17 +9,21 @@ html(lang="da")
 			title Jakob Bilstrup
 	body
 		div#wrapper
-			nav#mainnav
+			input#navbar-checkbox.navbar-checkbox(type='checkbox')
+			nav#menu
 				ul
-					li.active
+					li 
 						a(href="#") Jakob Bilstrup
 					li
 						a(href="#") Projects
-					li 
+					li
 						a(href="#") Expertise
 					li
 						a(href="#") Contact
 					li#hire.fr
 						a(href="#") Hire Me
+				label.navbar-handle(for='navbar-checkbox')
+
 			section#hero
-				img(href="images/hero.png" alt="")
+				p.big Jakob is trying to grow up,
+				p.small but instead he's doing what he's best at

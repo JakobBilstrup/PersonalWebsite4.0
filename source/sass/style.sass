@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web)
+@import 'bourbon'
 
 $main: 'Titillium Web', sans-serif
 $textcolor: rgb(56, 56, 56)
@@ -22,7 +23,7 @@ body
 	width: 90%
 	margin: 0 auto 0 auto
 
-#mainnav
+#menu
 	padding-top: 40px
 	font-size: 20px
 	vertical-align: bottom
@@ -32,6 +33,7 @@ body
 			display: inline-block
 			margin: 30px
 			padding-bottom: 3px
+			list-style: none
 			a
 				text-decoration: none
 				color: initial
@@ -43,5 +45,91 @@ body
 			margin: 0
 
 #hero
-	height: 500px
-	background-color: red
+	height: 200px
+	text-align: center
+	padding-top: 200px
+	p
+		margin-left: auto
+		margin-right: auto
+
+	.big
+		font-size: 40px
+	.small
+		font-size: 22px
+		color: lighten($textcolor, 20)
+
+/* Navbar-Colapse
+.navbar-checkbox
+	display: none
+.navbar-handle
+	display: none
+	cursor: pointer
+	position: relative
+	font-size: 45px
+	padding: .5em 0
+	height: 0
+	width: 1.66666667em
+	border-top: 0.13333333em solid
+	&:before, &:after
+		position: absolute
+		left: 0
+		right: 0
+		content: ' '
+		border-top: 0.13333333em solid
+	&:before
+		top: 0.37777778em
+	&:after
+		top: 0.88888889em
+
+.navbar-handle
+	position: absolute
+	font-size: 1.2em
+	top: 0.7em
+	right: 12px
+	z-index: 10
+
+@media (max-width: 800px)
+	#menu
+		ul
+			max-height: 0
+			overflow: hidden
+		li
+			visibility: hidden
+			display: block
+			border: none
+		ul
+			margin-top: 0.5em
+		.navbar-handle
+			display: block
+	#navbar-checkbox:checked + .menu
+		ul
+			max-height: 300px
+		li
+			visibility: visible
+		.navbar-handle
+			border-color: #aaa
+			&:after, &:before
+				border-color: #aaa
+
+@media (max-width: 800px)
+	#menu
+		> ul
+			max-height: 0
+			overflow: show
+			margin: 0 3.5em 0 1em
+		li
+			visibility: hidden
+			display: block !important
+			border: none
+			text-align: right
+		.navbar-handle
+			display: block
+	#navbar-checkbox:checked + #menu
+		ul
+			max-height: 100%
+			li
+				visibility: visible
+		.navbar-handle
+			border-color: #aaa
+			&:after, &:before
+				border-color: #aaa
