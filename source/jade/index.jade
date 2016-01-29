@@ -13,15 +13,10 @@ html(lang="da")
 	body
 		div#wrapper
 			include ./includes/nav.jade
+			include ./includes/social.jade
 			section#hero
 				p.big Jakob is trying to grow up,
 				p.small but he spends all his time design & coding websites
 
 			footer
-				span#social
-					a
-						i.fa.fa-linkedin
-					a
-						i.fa.fa-github
-					a
-						i.fa.fa-facebook
+				include ./includes/social.jade

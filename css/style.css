@@ -17,6 +17,29 @@ body {
 #wrapper {
   width: 90%;
   margin: 0 auto 0 auto; }
+  #wrapper > span {
+    position: absolute;
+    right: 240px;
+    top: 75px; }
+
+.social a {
+  color: inherit;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  border-radius: 50px;
+  width: 41.72px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s; }
+  .social a:last-child {
+    padding: 5px 13px; }
+  .social a:hover {
+    background-color: #3d3d3d;
+    color: white;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s; }
 
 #menu {
   padding-top: 40px;
@@ -96,27 +119,9 @@ footer {
   height: 90px;
   position: fixed;
   bottom: 0; }
-  footer #social {
+  footer .social {
     position: absolute;
     right: 30px; }
-    footer #social a {
-      color: inherit;
-      margin-right: 10px;
-      border: 1px solid transparent;
-      padding: 5px 10px;
-      border-radius: 50px;
-      width: 41.72px;
-      -webkit-transition: 0.5s;
-      -moz-transition: 0.5s;
-      transition: 0.5s; }
-      footer #social a:last-child {
-        padding: 5px 13px; }
-      footer #social a:hover {
-        background-color: #3d3d3d;
-        color: white;
-        -webkit-transition: 0.5s;
-        -moz-transition: 0.5s;
-        transition: 0.5s; }
 
 /* Navbar-Colapse */
 .navbar-checkbox {
@@ -149,7 +154,10 @@ footer {
   right: 12px;
   z-index: 10; }
 
-@media (max-width: 800px) {
+@media (min-width: 900px) {
+  #wrapper > span {
+    display: none; } }
+@media (max-width: 900px) {
   #menu ul {
     max-height: 0;
     overflow: hidden; }
@@ -162,6 +170,10 @@ footer {
   #menu .navbar-handle {
     display: block; }
 
+  #wrapper > span {
+    top: 30px;
+    left: 100px; }
+
   #navbar-checkbox:checked + .menu ul {
     max-height: 300px; }
   #navbar-checkbox:checked + .menu li {
@@ -170,7 +182,7 @@ footer {
     border-color: #aaa; }
     #navbar-checkbox:checked + .menu .navbar-handle:after, #navbar-checkbox:checked + .menu .navbar-handle:before {
       border-color: #aaa; } }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #menu > ul {
     max-height: 0;
     overflow: show;
@@ -190,7 +202,10 @@ footer {
   #navbar-checkbox:checked + #menu .navbar-handle {
     border-color: #aaa; }
     #navbar-checkbox:checked + #menu .navbar-handle:after, #navbar-checkbox:checked + #menu .navbar-handle:before {
-      border-color: #aaa; } }
+      border-color: #aaa; }
+
+  footer .social {
+    display: none; } }
 /* PROJECT SITE MQ */
 @media (max-width: 1700px) {
   #projects article {

@@ -22,6 +22,28 @@ body
 #wrapper
 	width: 90%
 	margin: 0 auto 0 auto
+	> span
+		position: absolute
+		right: 240px
+		top: 75px
+
+.social
+	a
+		color: inherit
+		margin-right: 10px
+		border: 1px solid transparent
+		padding: 5px 10px
+		border-radius: 50px
+		width: 41.72px
+		+transition(0.5s)
+
+		&:last-child
+			padding: 5px 13px
+
+		&:hover
+			background-color: rgb(61, 61, 61)
+			color: white
+			+transition(0.5s)
 
 #menu
 	padding-top: 40px
@@ -101,25 +123,9 @@ footer
 	position: fixed
 	bottom: 0
 
-	#social
+	.social
 		position: absolute
 		right: 30px
-		a
-			color: inherit
-			margin-right: 10px
-			border: 1px solid transparent
-			padding: 5px 10px
-			border-radius: 50px
-			width: 41.72px
-			+transition(0.5s)
-
-			&:last-child
-				padding: 5px 13px
-
-			&:hover
-				background-color: rgb(61, 61, 61)
-				color: white
-				+transition(0.5s)
 
 /* Navbar-Colapse
 .navbar-checkbox
@@ -151,7 +157,12 @@ footer
 	right: 12px
 	z-index: 10
 
-@media (max-width: 800px)
+@media (min-width: 900px)
+	#wrapper
+		> span
+			display: none
+
+@media (max-width: 900px)
 	#menu
 		ul
 			max-height: 0
@@ -164,6 +175,10 @@ footer
 			margin-top: 0.5em
 		.navbar-handle
 			display: block
+	#wrapper
+		> span
+			top: 30px
+			left: 100px
 	#navbar-checkbox:checked + .menu
 		ul
 			max-height: 300px
@@ -174,7 +189,7 @@ footer
 			&:after, &:before
 				border-color: #aaa
 
-@media (max-width: 800px)
+@media (max-width: 900px)
 	#menu
 		> ul
 			max-height: 0
@@ -196,6 +211,9 @@ footer
 			border-color: #aaa
 			&:after, &:before
 				border-color: #aaa
+	footer
+		.social
+			display: none
 
 /* PROJECT SITE MQ
 @media (max-width: 1700px)

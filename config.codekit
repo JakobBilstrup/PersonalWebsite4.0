@@ -61,6 +61,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/source\/jade\/includes\/social.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/source\/jade\/includes\/social.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/includes\/social.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
 	"\/source\/jade\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
