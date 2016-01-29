@@ -52,16 +52,18 @@ body {
     color: #6b6b6b; }
 
 footer {
-  background-color: #9d5d5a;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   height: 90px;
-  position: relative; }
+  position: fixed;
+  bottom: 0; }
   footer #social {
     position: absolute;
     right: 30px; }
-    footer #social i {
-      margin: 20px; }
+    footer #social a {
+      color: inherit; }
+      footer #social a i {
+        margin: 20px; }
 
 /* Navbar-Colapse */
 .navbar-checkbox {
