@@ -40,9 +40,15 @@ body
 		.active
 			border-bottom: 1px solid
 		#hire
-			border: 1px solid
-			padding: 25px
-			margin: 0
+			a
+				border: 1px solid rgba(23, 23, 23, 0.3)
+				padding: 25px
+				margin: 0
+				+transition(0.5s)
+				&:hover
+					background-color: rgb(61, 61, 61)
+					color: white
+					+transition(0.5s)
 
 #hero
 	height: 200px
@@ -70,8 +76,20 @@ footer
 		right: 30px
 		a
 			color: inherit
-			i
-				margin: 20px
+			margin-right: 10px
+			border: 1px solid transparent
+			padding: 5px 10px
+			border-radius: 50px
+			width: 41.72px
+			+transition(0.5s)
+
+			&:last-child
+				padding: 5px 13px
+
+			&:hover
+				background-color: rgb(61, 61, 61)
+				color: white
+				+transition(0.5s)
 
 /* Navbar-Colapse
 .navbar-checkbox

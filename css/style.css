@@ -33,10 +33,19 @@ body {
       color: initial; }
   #menu ul .active {
     border-bottom: 1px solid; }
-  #menu ul #hire {
-    border: 1px solid;
+  #menu ul #hire a {
+    border: 1px solid rgba(23, 23, 23, 0.3);
     padding: 25px;
-    margin: 0; }
+    margin: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s; }
+    #menu ul #hire a:hover {
+      background-color: #3d3d3d;
+      color: white;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s; }
 
 #hero {
   height: 200px;
@@ -61,9 +70,23 @@ footer {
     position: absolute;
     right: 30px; }
     footer #social a {
-      color: inherit; }
-      footer #social a i {
-        margin: 20px; }
+      color: inherit;
+      margin-right: 10px;
+      border: 1px solid transparent;
+      padding: 5px 10px;
+      border-radius: 50px;
+      width: 41.72px;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s; }
+      footer #social a:last-child {
+        padding: 5px 13px; }
+      footer #social a:hover {
+        background-color: #3d3d3d;
+        color: white;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        transition: 0.5s; }
 
 /* Navbar-Colapse */
 .navbar-checkbox {
