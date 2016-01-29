@@ -172,7 +172,7 @@ footer {
 
   #wrapper > span {
     top: 30px;
-    left: 100px; }
+    left: 50px; }
 
   #navbar-checkbox:checked + .menu ul {
     max-height: 300px; }
