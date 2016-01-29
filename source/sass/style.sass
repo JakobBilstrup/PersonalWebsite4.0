@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web)
 
 $main: 'Titillium Web', sans-serif
+$textcolor: rgb(56, 56, 56)
 
 *
 	margin: 0
@@ -11,6 +12,7 @@ $main: 'Titillium Web', sans-serif
 
 html, body
 	height: 100%
+	color: $textcolor
 
 body
 	font-family: $main
@@ -24,14 +26,22 @@ body
 	padding-top: 40px
 	font-size: 20px
 	vertical-align: bottom
+	text-rendering: optimizeLegibility
 	ul
 		li
 			display: inline-block
 			margin: 30px
 			padding-bottom: 3px
+			a
+				text-decoration: none
+				color: initial
 		.active
 			border-bottom: 1px solid
 		#hire
 			border: 1px solid
 			padding: 25px
 			margin: 0
+
+#hero
+	height: 500px
+	background-color: red
