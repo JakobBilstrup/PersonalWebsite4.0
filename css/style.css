@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+* {
+  margin: 0;
+  padding: 0; }
+
+.fr {
+  float: right; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400; }
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto 0 auto; }
+
+#mainnav {
+  padding-top: 40px;
+  font-size: 20px;
+  vertical-align: bottom; }
+  #mainnav ul li {
+    display: inline-block;
+    margin: 30px;
+    padding-bottom: 3px; }
+  #mainnav ul .active {
+    border-bottom: 1px solid; }
+  #mainnav ul #hire {
+    border: 1px solid;
+    padding: 25px;
+    margin: 0; }
