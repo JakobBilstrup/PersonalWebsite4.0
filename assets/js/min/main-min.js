@@ -1,0 +1,1 @@
+$(function(){var t=window.location.href.substr(window.location.href.lastIndexOf("/")+1);$("#menu ul li a").each(function(){($(this).attr("href")==t||""==$(this).attr("href"))&&$(this).addClass("active")}),console.log("Hello curious fella - Jakob Bilstrup 2016")});
