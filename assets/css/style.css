@@ -156,12 +156,20 @@ body {
       background-color: #F77C00; }
   #projects #third {
     background-image: url(../img/bookit.png); }
+    #projects #third span {
+      background-color: #4E9DFF; }
   #projects #fourth {
     background-image: url(../img/bookit.png); }
+    #projects #fourth span {
+      background-color: #4E9DFF; }
   #projects #fifth {
     background-image: url(../img/bookit.png); }
+    #projects #fifth span {
+      background-color: #4E9DFF; }
   #projects #six {
     background-image: url(../img/bookit.png); }
+    #projects #six span {
+      background-color: #4E9DFF; }
 
 footer {
   bottom: 0;
