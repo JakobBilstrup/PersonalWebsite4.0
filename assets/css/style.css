@@ -24,7 +24,7 @@ body {
 
 .social a {
   color: inherit;
-  margin-right: 10px;
+  margin-right: 7px;
   border: 1px solid transparent;
   padding: 5px 10px;
   border-radius: 50px;
@@ -112,7 +112,9 @@ body {
   #projects .projects {
     background-position: center;
     text-align: center;
-    background-size: 100% auto; }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px; }
     #projects .projects a {
       color: inherit; }
       #projects .projects a span {
@@ -147,27 +149,33 @@ body {
       visibility: visible;
       opacity: 1; }
   #projects #one {
-    background-image: url(../img/toejstory.png); }
+    background-image: url(../img/toejstory.png);
+    background-color: #E95D47; }
     #projects #one span {
       background-color: #E95D47; }
   #projects #two {
-    background-image: url(../img/bookit.png); }
+    background-image: url(../img/bookit.png);
+    background-color: #5E9AE7; }
     #projects #two span {
       background-color: #F77C00; }
   #projects #third {
-    background-image: url(../img/bookit.png); }
+    background-image: url(../img/senegal.png);
+    background-color: #47E769; }
     #projects #third span {
-      background-color: #4E9DFF; }
+      background-color: #47E769; }
   #projects #fourth {
-    background-image: url(../img/bookit.png); }
+    background-image: url(../img/bookit.png);
+    background-color: #4E9DFF; }
     #projects #fourth span {
       background-color: #4E9DFF; }
   #projects #fifth {
-    background-image: url(../img/bookit.png); }
+    background-image: url(../img/bookit.png);
+    background-color: #4E9DFF; }
     #projects #fifth span {
       background-color: #4E9DFF; }
   #projects #six {
-    background-image: url(../img/bookit.png); }
+    background-image: url(../img/bookit.png);
+    background-color: #4E9DFF; }
     #projects #six span {
       background-color: #4E9DFF; }
 

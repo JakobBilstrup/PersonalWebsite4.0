@@ -15,7 +15,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4968,
+		"initialSize": 7219,
 		"inputAbbreviatedPath": "\/assets\/img\/bookit.png",
 		"outputAbbreviatedPath": "\/assets\/img\/bookit.png",
 		"outputPathIsOutsideProject": 0,
@@ -33,11 +33,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/assets\/img\/senegal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8193,
+		"inputAbbreviatedPath": "\/assets\/img\/senegal.png",
+		"outputAbbreviatedPath": "\/assets\/img\/senegal.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/assets\/img\/toejstory.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 21180,
+		"initialSize": 61432,
 		"inputAbbreviatedPath": "\/assets\/img\/toejstory.png",
 		"outputAbbreviatedPath": "\/assets\/img\/toejstory.png",
 		"outputPathIsOutsideProject": 0,
@@ -65,15 +76,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/README.html": {
 		"fileType": 8192,
@@ -104,6 +106,17 @@
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
+		},
+	"\/source\/jade\/includes\/head.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/includes\/head.jade",
+		"outputAbbreviatedPath": "\/source\/jade\/includes\/head.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/source\/jade\/includes\/nav.jade": {
 		"compileDebug": 1,
