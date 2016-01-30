@@ -1,21 +1,13 @@
 doctype html
 html(lang="da")
-	head
-			meta(charset='utf-8')
-			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-			meta(name='viewport', content='width=device-width, initial-scale=1')
-			link(rel='shortcut icon', href='assets/img/favicon.ico')
-
-			link(rel='stylesheet', href='assets/css/style.css')
-			link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
-
-			title Jakob Bilstrup
+	include ./includes/head.jade
 	body
 		div#wrapper
 			include ./includes/nav.jade
 			include ./includes/social.jade
 			h1#projectshead This is some of my projects
 			section#projects
+				// 1 
 				article.projects#one(data-scroll-speed="4")
 					a(href="#")
 						span
@@ -23,6 +15,7 @@ html(lang="da")
 							small.year 2016
 							h1 Tøjstory
 							p Web Design & Programming
+				// 2 
 				article.projects#two
 					a(href="#")
 						span
@@ -30,6 +23,7 @@ html(lang="da")
 							small.year 2015
 							h1 BOOKit
 							p Mobile application concept
+				// 3 
 				article.projects#third(data-scroll-speed="4")
 					a(href="#")
 						span
@@ -37,13 +31,15 @@ html(lang="da")
 							small.year 2015
 							h1 Senegal Voksenskole
 							p Web Design & Programming
+				// 4 
 				article.projects#fourth(data-scroll-speed="4")
 					a(href="#")
 						span
 							small.category Freelance
-							small.year 2015
-							h1 Project Title
-							p Project Description
+							small.year 2016
+							h1 Kode
+							p Proposal of Design
+				// 5 
 				article.projects#fifth
 					a(href="#")
 						span
@@ -51,6 +47,7 @@ html(lang="da")
 							small.year 2015
 							h1 Project Title
 							p Project Description
+				// 6 
 				article.projects#six(data-scroll-speed="4")
 					a(href="#")
 						span
@@ -58,6 +55,31 @@ html(lang="da")
 							small.year 2015
 							h1 Project Title
 							p Project Description
+				// 7 
+				article.projects#seven(data-scroll-speed="4")
+					a(href="#")
+						span
+							small.category Freelance
+							small.year 2015
+							h1 Project Title
+							p Project Description
+				// 8 
+				article.projects#eight
+					a(href="#")
+						span
+							small.category Freelance
+							small.year 2015
+							h1 Project Title
+							p Project Description
+				// 9 
+				article.projects#nine(data-scroll-speed="4")
+					a(href="#")
+						span
+							small.category Freelance
+							small.year 2015
+							h1 Project Title
+							p Project Description
+
 
 			footer
 				include ./includes/social.jade

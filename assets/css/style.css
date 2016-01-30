@@ -164,10 +164,10 @@ body {
     #projects #third span {
       background-color: #47E769; }
   #projects #fourth {
-    background-image: url(../img/bookit.png);
-    background-color: #4E9DFF; }
+    background-image: url(../img/kode.svg);
+    background-color: #464646; }
     #projects #fourth span {
-      background-color: #4E9DFF; }
+      background-color: #464646; }
   #projects #fifth {
     background-image: url(../img/bookit.png);
     background-color: #4E9DFF; }
@@ -177,6 +177,21 @@ body {
     background-image: url(../img/bookit.png);
     background-color: #4E9DFF; }
     #projects #six span {
+      background-color: #4E9DFF; }
+  #projects #seven {
+    background-image: url(../img/bookit.png);
+    background-color: #4E9DFF; }
+    #projects #seven span {
+      background-color: #4E9DFF; }
+  #projects #eight {
+    background-image: url(../img/bookit.png);
+    background-color: #4E9DFF; }
+    #projects #eight span {
+      background-color: #4E9DFF; }
+  #projects #nine {
+    background-image: url(../img/bookit.png);
+    background-color: #4E9DFF; }
+    #projects #nine span {
       background-color: #4E9DFF; }
 
 footer {
