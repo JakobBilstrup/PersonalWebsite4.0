@@ -135,7 +135,11 @@ body {
           position: absolute;
           bottom: 30px;
           width: 100%; }
-        #projects .projects a span small {
+        #projects .projects a span .category {
+          position: absolute;
+          top: 10px;
+          left: 20px; }
+        #projects .projects a span .year {
           position: absolute;
           top: 10px;
           right: 20px; }
