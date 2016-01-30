@@ -33,6 +33,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/assets\/img\/toejstory.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21180,
+		"inputAbbreviatedPath": "\/assets\/img\/toejstory.png",
+		"outputAbbreviatedPath": "\/assets\/img\/toejstory.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/assets\/js\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
