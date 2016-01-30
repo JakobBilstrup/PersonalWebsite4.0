@@ -106,6 +106,7 @@ body
 	display: flex
 	-webkit-flex-flow: row wrap
 	justify-content: space-around
+	align-items: flex-start
 
 	article
 		height: 500px
@@ -125,6 +126,7 @@ body
 		background-color: rgb(159, 181, 237)
 	#six
 		background-color: rgb(212, 159, 237)
+
 
 footer
 	bottom: 0
@@ -187,6 +189,9 @@ footer
 			margin-top: 0.5em
 		.navbar-handle
 			display: block
+			position: absolute
+			right: 20px
+			top: 20px
 	#navbar-checkbox:checked + #menu
 		ul
 			max-height: 100%
@@ -223,6 +228,10 @@ footer
 			flex-basis: 20%
 
 @media (max-width: 1000px)
+	#projects
+		article
+			flex-basis: 40%
+@media (max-width: 750px)
 	#projects
 		article
 			flex-basis: 100%

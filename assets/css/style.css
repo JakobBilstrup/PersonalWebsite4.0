@@ -101,7 +101,8 @@ body {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: flex-start; }
   #projects article {
     height: 500px;
     display: inline-block;
@@ -178,7 +179,10 @@ footer {
   #menu ul {
     margin-top: 0.5em; }
   #menu .navbar-handle {
-    display: block; }
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px; }
 
   #navbar-checkbox:checked + #menu ul {
     max-height: 100%; }
@@ -209,5 +213,8 @@ footer {
   #projects article {
     flex-basis: 20%; } }
 @media (max-width: 1000px) {
+  #projects article {
+    flex-basis: 40%; } }
+@media (max-width: 750px) {
   #projects article {
     flex-basis: 100%; } }
