@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0; }
 
+.icon, #projects #one, #projects #two, #projects #third, #projects #fourth {
+  background-size: 150px !important; }
+
+.img, #projects #fifth {
+  background-size: cover;
+  background-position: center bottom; }
+
 .fr {
   float: right; }
 
@@ -113,8 +120,7 @@ body {
     background-position: center;
     text-align: center;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: 150px; }
+    background-repeat: no-repeat; }
     #projects .projects a {
       color: inherit; }
       #projects .projects a span {
@@ -169,10 +175,10 @@ body {
     #projects #fourth span {
       background-color: #464646; }
   #projects #fifth {
-    background-image: url(../img/bookit.png);
-    background-color: #4E9DFF; }
+    background-image: url(../img/workspace.jpg);
+    background-color: #ffc34e; }
     #projects #fifth span {
-      background-color: #4E9DFF; }
+      background-color: #ffc34e; }
   #projects #six {
     background-image: url(../img/bookit.png);
     background-color: #4E9DFF; }

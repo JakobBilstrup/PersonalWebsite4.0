@@ -8,7 +8,7 @@ html(lang="da")
 			h1#projectshead This is some of my projects
 			section#projects
 				// 1 
-				article.projects#one(data-scroll-speed="4")
+				article.projects.icon#one(data-scroll-speed="4")
 					a(href="#")
 						span
 							small.category Freelance
@@ -16,7 +16,7 @@ html(lang="da")
 							h1 Tøjstory
 							p Web Design & Programming
 				// 2 
-				article.projects#two
+				article.projects.icon#two
 					a(href="#")
 						span
 							small.category School Project
@@ -24,7 +24,7 @@ html(lang="da")
 							h1 BOOKit
 							p Mobile application concept
 				// 3 
-				article.projects#third(data-scroll-speed="4")
+				article.projects.icon#third(data-scroll-speed="4")
 					a(href="#")
 						span
 							small.category School Project
@@ -35,18 +35,18 @@ html(lang="da")
 				article.projects#fourth(data-scroll-speed="4")
 					a(href="#")
 						span
-							small.category Freelance
+							small.category Training
 							small.year 2016
 							h1 Kode
 							p Proposal of Design
 				// 5 
 				article.projects#fifth
 					a(href="#")
-						span
-							small.category Freelance
+						span.img
+							small.category Photography
 							small.year 2015
-							h1 Project Title
-							p Project Description
+							h1 Workspace
+							p Personal Project
 				// 6 
 				article.projects#six(data-scroll-speed="4")
 					a(href="#")
@@ -84,4 +84,4 @@ html(lang="da")
 			footer
 				include ./includes/social.jade
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js")
-		script(src="assets/js/main.js")
+		script(src="assets/js/min/main-min.js")

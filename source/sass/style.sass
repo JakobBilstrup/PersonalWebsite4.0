@@ -8,6 +8,11 @@ $textcolor: rgb(56, 56, 56)
 	margin: 0
 	padding: 0
 
+.icon
+	background-size: 150px !important
+.img
+	background-size: cover
+	background-position: center bottom
 .fr
 	float: right
 
@@ -121,7 +126,6 @@ body
 		text-align: center
 		background-position: center
 		background-repeat: no-repeat
-		background-size: 150px
 		a
 			color: inherit
 			span
@@ -145,37 +149,44 @@ body
 				.year
 					+position(absolute, 10px 20px null null)
 
+
+
 		&:hover span
 			visibility: visible
 			opacity: 1
 	#one
 		background-image: url(../img/toejstory.png)
 		background-color: #E95D47
+		@extend .icon
 		span
 			background-color: #E95D47
 	#two
 		background-image: url(../img/bookit.png)
 		background-color: #5E9AE7
+		@extend .icon
 		span
 			background-color: #F77C00
 
 	#third
 		background-image: url(../img/senegal.png)
 		background-color: #47E769
+		@extend .icon
 		span
 			background-color: #47E769
 
 	#fourth
 		background-image: url(../img/kode.svg)
 		background-color: rgb(70, 70, 70)
+		@extend .icon
 		span
 			background-color: rgb(70, 70, 70)
 
 	#fifth
-		background-image: url(../img/bookit.png)
-		background-color: #4E9DFF
+		background-image: url(../img/workspace.jpg)
+		background-color: #ffc34e
+		@extend .img
 		span
-			background-color: #4E9DFF
+			background-color: #ffc34e
 
 	#six
 		background-image: url(../img/bookit.png)
