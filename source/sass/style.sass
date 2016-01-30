@@ -14,9 +14,9 @@ $textcolor: rgb(56, 56, 56)
 html, body
 	height: 100%
 	color: $textcolor
+	font-family: $main
 
 body
-	font-family: $main
 	font-weight: 400
 
 #wrapper
@@ -89,9 +89,16 @@ body
 		color: lighten($textcolor, 20)
 
 /* PROJECT SITE
+#projectshead
+	font-size: 20px
+	font-style: normal
+	text-align: center
+	margin-top: 80px
+	font-weight: 100
+
 #projects
 	width: 85%
-	margin: 100px auto auto auto
+	margin: 20px auto auto auto
 	display: -webkit-box
 	display: -moz-box
 	display: -ms-flexbox
@@ -99,6 +106,7 @@ body
 	display: flex
 	-webkit-flex-flow: row wrap
 	justify-content: space-around
+
 	article
 		height: 500px
 		display: inline-block
@@ -128,6 +136,7 @@ footer
 	.social
 		position: absolute
 		right: -50px
+		bottom: 20px
 
 /* Navbar-Colapse
 .navbar-checkbox
@@ -171,12 +180,25 @@ footer
 			overflow: hidden
 		li
 			visibility: hidden
-			display: block
+			display: block !important
 			border: none
+			text-align: right
 		ul
 			margin-top: 0.5em
 		.navbar-handle
 			display: block
+	#navbar-checkbox:checked + #menu
+		ul
+			max-height: 100%
+			li
+				visibility: visible
+		.navbar-handle
+			border-color: #aaa
+			&:after, &:before
+				border-color: #aaa
+	footer
+		.social
+			display: none
 	#wrapper
 		> span
 			top: 30px
@@ -192,38 +214,15 @@ footer
 				border-color: #aaa
 
 @media (max-width: 900px)
-	#menu
-		> ul
-			max-height: 0
-			overflow: show
-			margin: 0 3.5em 0 1em
-		li
-			visibility: hidden
-			display: block !important
-			border: none
-			text-align: right
-		.navbar-handle
-			display: block
-	#navbar-checkbox:checked + #menu
-		ul
-			max-height: 100%
-			li
-				visibility: visible
-		.navbar-handle
-			border-color: #aaa
-			&:after, &:before
-				border-color: #aaa
-	footer
-		.social
-			display: none
+
 
 /* PROJECT SITE MQ
-@media (max-width: 1700px)
+@media (max-width: 1500px)
 	#projects
 		article
-			flex-basis: 40%
+			flex-basis: 20%
 
-@media (max-width: 1300px)
+@media (max-width: 1000px)
 	#projects
 		article
 			flex-basis: 100%

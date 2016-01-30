@@ -8,10 +8,10 @@
 
 html, body {
   height: 100%;
-  color: #383838; }
+  color: #383838;
+  font-family: "Titillium Web", sans-serif; }
 
 body {
-  font-family: "Titillium Web", sans-serif;
   font-weight: 400; }
 
 #wrapper {
@@ -53,7 +53,8 @@ body {
     list-style: none; }
     #menu ul li a {
       text-decoration: none;
-      color: initial; }
+      color: initial;
+      hover-background-color: red; }
   #menu ul .active {
     border-bottom: 1px solid; }
   #menu ul #hire a {
@@ -84,9 +85,16 @@ body {
     color: #6b6b6b; }
 
 /* PROJECT SITE */
+#projectshead {
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  margin-top: 80px;
+  font-weight: 100; }
+
 #projects {
   width: 85%;
-  margin: 100px auto auto auto;
+  margin: 20px auto auto auto;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -121,7 +129,8 @@ footer {
   bottom: 0; }
   footer .social {
     position: absolute;
-    right: -50px; }
+    right: -50px;
+    bottom: 20px; }
 
 /* Navbar-Colapse */
 .navbar-checkbox {
@@ -163,35 +172,11 @@ footer {
     overflow: hidden; }
   #menu li {
     visibility: hidden;
-    display: block;
-    border: none; }
-  #menu ul {
-    margin-top: 0.5em; }
-  #menu .navbar-handle {
-    display: block; }
-
-  #wrapper > span {
-    top: 30px;
-    left: 50px; }
-
-  #navbar-checkbox:checked + .menu ul {
-    max-height: 300px; }
-  #navbar-checkbox:checked + .menu li {
-    visibility: visible; }
-  #navbar-checkbox:checked + .menu .navbar-handle {
-    border-color: #aaa; }
-    #navbar-checkbox:checked + .menu .navbar-handle:after, #navbar-checkbox:checked + .menu .navbar-handle:before {
-      border-color: #aaa; } }
-@media (max-width: 900px) {
-  #menu > ul {
-    max-height: 0;
-    overflow: show;
-    margin: 0 3.5em 0 1em; }
-  #menu li {
-    visibility: hidden;
     display: block !important;
     border: none;
     text-align: right; }
+  #menu ul {
+    margin-top: 0.5em; }
   #menu .navbar-handle {
     display: block; }
 
@@ -205,11 +190,24 @@ footer {
       border-color: #aaa; }
 
   footer .social {
-    display: none; } }
+    display: none; }
+
+  #wrapper > span {
+    top: 30px;
+    left: 50px; }
+
+  #navbar-checkbox:checked + .menu ul {
+    max-height: 300px; }
+  #navbar-checkbox:checked + .menu li {
+    visibility: visible; }
+  #navbar-checkbox:checked + .menu .navbar-handle {
+    border-color: #aaa; }
+    #navbar-checkbox:checked + .menu .navbar-handle:after, #navbar-checkbox:checked + .menu .navbar-handle:before {
+      border-color: #aaa; } }
 /* PROJECT SITE MQ */
-@media (max-width: 1700px) {
+@media (max-width: 1500px) {
   #projects article {
-    flex-basis: 40%; } }
-@media (max-width: 1300px) {
+    flex-basis: 20%; } }
+@media (max-width: 1000px) {
   #projects article {
     flex-basis: 100%; } }
