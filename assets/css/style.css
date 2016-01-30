@@ -110,7 +110,35 @@ body {
     flex-grow: 1;
     flex-basis: 25%; }
   #projects #one {
-    background-color: #ed9f9f; }
+    background-color: #e5ed9f;
+    text-align: center;
+    background-image: url(../img/bookit.png);
+    background-position: center; }
+    #projects #one a {
+      color: inherit; }
+      #projects #one a span {
+        visibility: hidden;
+        opacity: 0;
+        display: inline-block;
+        background-color: rgba(156, 156, 156, 0.65);
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        position: relative;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        transition: 0.5s; }
+        #projects #one a span h1 {
+          margin-top: 100px; }
+        #projects #one a span small {
+          position: absolute;
+          top: 10px;
+          right: 20px; }
+    #projects #one:hover span {
+      visibility: visible;
+      opacity: 1; }
   #projects #two {
     background-color: #e5ed9f; }
   #projects #third {
@@ -124,8 +152,8 @@ body {
 
 footer {
   bottom: 0;
-  width: 90%;
   height: 90px;
+  width: 90%;
   position: fixed;
   bottom: 0; }
   footer .social {
