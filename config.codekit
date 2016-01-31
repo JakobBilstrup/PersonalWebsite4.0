@@ -64,7 +64,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/workspace.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/img\/workspace.png": {
 		"fileType": 32768,
@@ -189,7 +189,7 @@
 		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/jade\/projects.jade": {
 		"compileDebug": 1,
@@ -200,7 +200,7 @@
 		"outputAbbreviatedPath": "\/projects.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
+		"outputStyle": 1
 		},
 	"\/source\/sass\/style.sass": {
 		"createSourceMap": 0,
@@ -213,7 +213,7 @@
 		"outputAbbreviatedPath": "\/assets\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": false
