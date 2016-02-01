@@ -59,23 +59,12 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 113336,
+		"initialSize": 112534,
 		"inputAbbreviatedPath": "\/assets\/img\/workspace.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/workspace.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
-		},
-	"\/assets\/img\/workspace.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 74509,
-		"inputAbbreviatedPath": "\/assets\/img\/workspace.png",
-		"outputAbbreviatedPath": "\/assets\/img\/workspace.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/assets\/js\/main.js": {
 		"fileType": 64,
