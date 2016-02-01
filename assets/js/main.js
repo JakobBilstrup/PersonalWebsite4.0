@@ -37,6 +37,22 @@ $(function() {
 			 $('[data-scroll-speed]').moveIt();
 			});
 		}
+		$(function(){
+			 var shrinkHeader = 100;
+			  $(window).scroll(function() {
+			    var scroll = getCurrentScroll();
+			      if ( scroll >= shrinkHeader ) {
+			           $('#menu').addClass('menushrink');
+			        }
+			        else {
+			            $('#menu').removeClass('menushrink');
+			        }
+			  });
+			function getCurrentScroll() {
+			    return window.pageYOffset || document.documentElement.scrollTop;
+			    }
+			});
+
 
 		/*Output to browser console to make sure scripts are working*/
 		console.log( "Hello curious fella - Jakob Bilstrup 2016" );

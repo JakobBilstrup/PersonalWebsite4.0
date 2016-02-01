@@ -11,7 +11,6 @@ $navcolor: rgb(235, 235, 235)
 	font-family: $main
 	text-rendering: optimizeLegibility
 
-
 .icon
 	background-size: 150px !important
 .img
@@ -67,6 +66,7 @@ body
 			margin: 30px
 			padding-bottom: 3px
 			list-style: none
+			+transition(0.2s)
 			a
 				text-decoration: none
 				color: $navcolor
@@ -83,6 +83,12 @@ body
 					background-color: $navcolor
 					color: $textcolor
 					+transition(0.5s)
+.menushrink
+	ul
+		li
+			margin-top: 10px !important
+			margin-bottom: 10px !important
+			+transition(0.2s)
 
 #hero
 	height: 200px
