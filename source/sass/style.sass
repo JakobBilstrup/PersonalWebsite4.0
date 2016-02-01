@@ -16,8 +16,6 @@ $navcolor: rgb(235, 235, 235)
 .img
 	background-size: cover
 	background-position: center bottom
-.fr
-	float: right
 
 html, body
 	height: 100%
@@ -34,22 +32,24 @@ body
 		right: 240px
 		top: 75px
 
-.social
+header span
+	z-index: 20
+	position: fixed
+	top: 13px
+	left: 50px
 	a
-		color: inherit
+		color: $navcolor
 		margin-right: 7px
 		border: 1px solid transparent
 		padding: 5px 10px
 		border-radius: 50px
 		width: 41.72px
 		+transition(0.5s)
-
 		&:last-child
 			padding: 5px 13px
-
 		&:hover
-			background-color: rgb(61, 61, 61)
-			color: white
+			background-color: §navcolor
+			color: $textcolor
 			+transition(0.5s)
 
 #menu
@@ -74,6 +74,7 @@ body
 		.active
 			border-bottom: 1px solid
 		#hire
+			float: right
 			a
 				border: 1px solid $navcolor
 				padding: 20px
@@ -89,6 +90,15 @@ body
 			margin-top: 10px !important
 			margin-bottom: 10px !important
 			+transition(0.2s)
+
+		#hire
+			a
+				border: none !important
+				border-bottom: 1px solid $navcolor !important
+				padding: 1px 15px !important
+				background-color: transparant
+				color: $navcolor
+				+transition(0.1s)
 
 #hero
 	height: 200px
@@ -146,7 +156,7 @@ body
 				display: inline-block
 				+size(100%)
 				text-align: center
-				color: white
+				color: $navcolor
 				font-size: 20px
 				position: relative
 				+transition(0.5s)
@@ -234,9 +244,21 @@ footer
 	bottom: 0
 
 	.social
-		position: absolute
-		right: -50px
-		bottom: 20px
+		+position(absolute, null -50px 20px null)
+		a
+			color: $textcolor
+			margin-right: 7px
+			border: 1px solid transparent
+			padding: 5px 10px
+			border-radius: 50px
+			width: 41.72px
+			+transition(0.5s)
+			&:last-child
+				padding: 5px 13px
+			&:hover
+				background-color: rgb(61, 61, 61)
+				color: $navcolor
+				+transition(0.5s)
 
 /* Navbar-Colapse
 .navbar-checkbox
@@ -248,6 +270,7 @@ footer
 	font-size: 45px
 	padding: .5em 0
 	+size(1.66666667em 0)
+	color: $navcolor
 	border-top: 0.13333333em solid
 	&:before, &:after
 		position: absolute
@@ -268,27 +291,27 @@ footer
 	z-index: 10
 
 @media (min-width: 900px)
-	#wrapper
-		> span
-			display: none
+	header span
+		display: none
 
 @media (max-width: 900px)
 	#menu
 		ul
 			max-height: 0
 			overflow: hidden
-		li
-			visibility: hidden
-			display: block !important
-			border: none
-			text-align: right
-		ul
-			margin-top: 0.5em
+			margin-top: 50px
+			li
+				visibility: hidden
+				display: block !important
+				border: none
+				text-align: center
+			#hire
+				float: none
 		.navbar-handle
 			display: block
 			position: absolute
 			right: 20px
-			top: 20px
+			top: 15px
 	#navbar-checkbox:checked + #menu
 		ul
 			max-height: 100%
@@ -298,6 +321,7 @@ footer
 			border-color: #aaa
 			&:after, &:before
 				border-color: #aaa
+
 	footer
 		.social
 			display: none
