@@ -11,6 +11,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/img\/3dchaise.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27523,
+		"inputAbbreviatedPath": "\/assets\/img\/3dchaise.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/3dchaise.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/assets\/img\/bookit.png": {
 		"fileType": 32768,
 		"ignore": 0,
