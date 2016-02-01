@@ -1,0 +1,15 @@
+doctype html
+html(lang="da")
+	include ./includes/head.jade
+	body
+		div#wrapper
+			include ./includes/nav.jade
+			include ./includes/social.jade
+			section#hero
+				p.big Jakob is trying to grow up,
+				p.small but he spends all his time design & coding websites
+
+			footer
+				include ./includes/social.jade
+		script(defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js")
+		script(defer src="assets/js/min/main-min.js")
