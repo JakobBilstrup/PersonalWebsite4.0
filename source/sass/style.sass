@@ -3,6 +3,7 @@
 
 $main: 'Titillium Web', sans-serif
 $textcolor: rgb(56, 56, 56)
+$navcolor: rgb(235, 235, 235)
 
 *
 	margin: 0
@@ -51,9 +52,9 @@ body
 			+transition(0.5s)
 
 #menu
-	padding-top: 40px
 	font-size: 20px
 	vertical-align: bottom
+	background-color: rgb(36, 36, 36)
 	text-rendering: optimizeLegibility
 	ul
 		li
@@ -63,20 +64,19 @@ body
 			list-style: none
 			a
 				text-decoration: none
-				color: initial
-				:hover
-					background-color: red
+				color: $navcolor
+
 		.active
 			border-bottom: 1px solid
 		#hire
 			a
-				border: 1px solid rgba(23, 23, 23, 0.3)
-				padding: 25px
+				border: 1px solid $navcolor
+				padding: 20px
 				margin: 0
 				+transition(0.5s)
 				&:hover
-					background-color: rgb(61, 61, 61)
-					color: white
+					background-color: $navcolor
+					color: $textcolor
 					+transition(0.5s)
 
 #hero
