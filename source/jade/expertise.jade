@@ -1,14 +1,15 @@
 doctype html
 html(lang="da")
-	include ./includes/head.jade
+	head
+		include ./includes/head.jade
 	body
-		div#wrapper
+		header
 			include ./includes/nav.jade
+		div#wrapper
 			include ./includes/social.jade
 			section#hero
 				p.big Jakob is trying to grow up,
 				p.small but he spends all his time design & coding websites
-
 			footer
 				include ./includes/social.jade
 		script(defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js")

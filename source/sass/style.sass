@@ -8,6 +8,9 @@ $navcolor: rgb(235, 235, 235)
 *
 	margin: 0
 	padding: 0
+	font-family: $main
+	text-rendering: optimizeLegibility
+
 
 .icon
 	background-size: 150px !important
@@ -20,7 +23,6 @@ $navcolor: rgb(235, 235, 235)
 html, body
 	height: 100%
 	color: $textcolor
-	font-family: $main
 
 body
 	font-weight: 400
@@ -52,10 +54,13 @@ body
 			+transition(0.5s)
 
 #menu
-	font-size: 20px
+	font-size: 17px
 	vertical-align: bottom
 	background-color: rgb(36, 36, 36)
-	text-rendering: optimizeLegibility
+	position: fixed
+	width: 100%
+	top: 0
+	z-index: 1
 	ul
 		li
 			display: inline-block
@@ -98,7 +103,7 @@ body
 	font-size: 20px
 	font-style: normal
 	text-align: center
-	margin-top: 80px
+	margin-top: 130px
 	font-weight: 100
 
 #projects
