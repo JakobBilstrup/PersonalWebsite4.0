@@ -24,7 +24,11 @@ html, body
 body
 	font-weight: 400
 
-
+#front
+	background-image: url(../img/indexbg.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
 
 #wrapper
 	width: 90%
@@ -105,16 +109,22 @@ header span
 #hero
 	height: 200px
 	text-align: center
-	padding-top: 200px
+	padding-top: 300px
 	p
 		margin-left: auto
 		margin-right: auto
 
 	.big
 		font-size: 40px
+		color: $navcolor
 	.small
 		font-size: 22px
-		color: lighten($textcolor, 20)
+		color: darken($navcolor, 5)
+		display: inline-block
+		padding-left: 7px
+	.typer
+		@extend .small
+		color: darken($navcolor, 5)
 
 /* PROJECT SITE
 #projectshead
