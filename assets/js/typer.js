@@ -27,7 +27,7 @@ $(function() {
 	var options = {
 	highlightSpeed    : 20,
 	typeSpeed         : 100,
-	clearDelay        : 5000,
+	clearDelay        : 2500,
 	typeDelay         : 200,
 	clearOnHighlight  : true,
 	typerDataAttr     : 'data-typer-targets',
@@ -289,5 +289,5 @@ $(function() {
 	typerInterval     : 2000
 	});
 		/*Output to browser console to make sure scripts are working*/
-		console.log( "Hello curious fella - Jakob Bilstrup 2016" );
+		console.log( "Typer tool" );
 });
