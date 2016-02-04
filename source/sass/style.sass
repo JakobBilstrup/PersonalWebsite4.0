@@ -23,6 +23,7 @@ html, body
 
 body
 	font-weight: 400
+	background-color: #191919
 
 #front
 	background-image: url(../img/indexbg.jpg)
@@ -61,7 +62,7 @@ header span
 #menu
 	font-size: 17px
 	vertical-align: bottom
-	background-color: rgb(36, 36, 36)
+	background-color: #191919
 	position: fixed
 	width: 100%
 	top: 0
@@ -160,6 +161,7 @@ header span
 		background-position: center
 		background-repeat: no-repeat
 		vertical-align: middle
+		border: 1px white solid
 		a
 			color: inherit
 			span
@@ -185,66 +187,57 @@ header span
 				.year
 					+position(absolute, 10px 20px null null)
 
-
-
 		&:hover span
 			visibility: visible
 			opacity: 1
 	#toejstory
 		background-image: url(../img/toejstory.png)
-		background-color: #E95D47
 		@extend .icon
 		span
 			background-color: #E95D47
+		&:hover
+			filter: grayscale(0%)
 	#bookit
 		background-image: url(../img/bookit.png)
-		background-color: #5E9AE7
 		@extend .icon
 		span
 			background-color: #F77C00
 
 	#senegal
 		background-image: url(../img/senegal.png)
-		background-color: #47E769
 		@extend .icon
 		span
 			background-color: #47E769
 
 	#kode
 		background-image: url(../img/kode.svg)
-		background-color: rgb(70, 70, 70)
 		@extend .icon
 		span
 			background-color: rgb(70, 70, 70)
 
 	#workspace
 		background-image: url(../img/workspace.jpg)
-		background-color: #ffc34e
 		@extend .img
 		span
 			background-color: #ffc34e
 
 	#chaise
 		background-image: url(../img/3dchaise.jpg)
-		background-color: #ff4e73
 		@extend .img
 		span
 			background-color: #ff4e73
 
 	#seven
 		background-image: url(../img/bookit.png)
-		background-color: #4E9DFF
 		span
 			background-color: #4E9DFF
 
 	#eight
 		background-image: url(../img/bookit.png)
-		background-color: #4E9DFF
 		span
 			background-color: #4E9DFF
 	#nine
 		background-image: url(../img/bookit.png)
-		background-color: #4E9DFF
 		span
 			background-color: #4E9DFF
 
